@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test1
+      username: root
+      password: 23388530
+  thymeleaf:
+    cache: false
+  cache:
+    type: redis
+    cache-names: book
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+server:
+  port: 85
+
